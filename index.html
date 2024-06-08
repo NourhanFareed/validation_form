@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Login System</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="images/locked.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <section class="container my-3">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-8 form-box my-3 position-relative px-5" id="sFormBox">
+                    <form class="text-center mx-auto justify-content-center py-3" id="sForm" method="get"
+                        action="login.html">
+                        <div class="form-content">
+                            <h2 class="form-title text-info py-4 fw-bold fs-1">Smart Login System</h2>
+                            <div class="inputDiv  my-4 position-relative" id="inputDiv">
+                                <input type="text"
+                                    class="text-box form-control w-100 border bg-transparent text-white rounded-0"
+                                    id="sNameInput" placeholder="Enter your name">
+
+                                <div id="sErrorName"></div>
+                            </div>
+                            <div class="inputDiv  my-4 position-relative" id="inputDiv">
+                                <input type="email"
+                                    class="mail-box form-control w-100 border bg-transparent text-white rounded-0"
+                                    id="sEmailInput" placeholder="Enter your email">
+
+                                <div id="sErrorMail"></div>
+                            </div>
+                            <div class="inputDiv  my-4 position-relative" id="inputDiv">
+                                <input type="password"
+                                    class="pass-box form-control w-100 my-2 border bg-transparent text-white rounded-0"
+                                    id="sPassInput" placeholder="Enter your password">
+
+                                <div id="sErrorPass"></div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-info w-100 rounded-0 mt-4" id="signUpBtn">Sign
+                                Up</button>
+                            <p class=" text-white pt-3">You have an account? <a href="login.html"
+                                    class="text-white text-decoration-none">Signin</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/signUp.js"></script>
+    </body>
+
+</html>

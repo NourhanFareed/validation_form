@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+::selection {
+    color: white;
+    background-color: #0DCAF0;
+}
+
+body {
+    background-color: #24353F;
+}
+
+
+
+.form-box {
+    background-color: #24353F;
+    border: 1px solid #24353F;
+    min-height: 420px;
+    overflow: hidden !important;
+    position: relative !important;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.form-box::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 300px;
+    height: 300%;
+    margin: auto;
+    background: var(--boxAfterBackColor, linear-gradient(#fff700, #dc3c5f, #0DCAF0, #3CD500));
+    /* background: linear-gradient(#fff700, #dc3c5f, #0DCAF0, #3CD500); */
+    animation: rotate 7s linear infinite;
+    -webkit-animation: rotate 7s linear infinite;
+    transition: all 5s;
+    -webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+}
+
+.form-box::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    background: #24353F;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.form-content {
+    position: relative;
+    z-index: 2 !important;
+}
+
+::placeholder {
+    color: rgb(221, 222, 222) !important;
+}
+
+.btn {
+    z-index: 100000 !important;
+}
+
+.btn:hover {
+    color: white;
+
+}
+
+input:focus {
+    border: 1px solid #0DCAF0 !important;
+    box-shadow: none !important;
+}
+
+a:hover {
+    text-decoration: 1px double white underline !important;
+
+}
+
+#sErrorName,
+#sErrorMail,
+#sErrorPass,
+#errorMail,
+#errorPass {
+    background-color: #d6b2ba;
+    margin-top: 10px !important;
+
+}
+
+
+#sErrorName h6,
+#sErrorMail h6,
+#sErrorPass h6,
+#errorMail h6,
+#errorPass h6 {
+    margin-left: 30px !important;
+    width: fit-content;
+}
+
+#sErrorName h6,
+#sErrorMail h6,
+#sErrorPass h6,
+#errorMail h6,
+#errorPass h6,
+#sErrorName ul li,
+#sErrorMail ul li,
+#sErrorPass ul li,
+#errorMail ul li,
+#errorPass ul li {
+    padding: 5px 0;
+    color: red;
+    text-align: left !important;
+}
+
+/* ---------------------------------------------------------------------------- */
